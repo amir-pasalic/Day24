@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 class App extends Component {
   setMyStorage() {
@@ -6,14 +6,12 @@ class App extends Component {
     localStorage.setItem("Paragon", "yes, but Arena first");
     sessionStorage.setItem("frontend", "React");
   }
-
-  render() {
+    render() {
     return (
       <div className="App">
-        <button onClick={this.setMyStorage}></button>
+        <button onClick={this.setMyStorage}>Set Storage</button>
       </div>
     );
   }
 }
-
 export default App;

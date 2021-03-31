@@ -1,12 +1,8 @@
-import React, { Component } from "react";
-
+import React, { Component } from 'react';
 class App extends Component {
-  setLocalStorage() {
-    
+  setLocalStorage() {  
     localStorage.setItem("Arena", "Selection Month");
-     }
-
-  
+     } 
   render() {
     return (
       <div className="App">
@@ -15,5 +11,4 @@ class App extends Component {
     );
   }
 }
-
 export default App;

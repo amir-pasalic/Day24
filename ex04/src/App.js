@@ -1,21 +1,12 @@
-import React, { Component } from "react";
-
+import React, { Component } from 'react';
 class App extends Component {
-  setLocalStorage() {
-    
+  setLocalStorage() {   
     localStorage.setItem("Arena", "Selection Month");
      }
-
   getLocalStorage() {
-    
-    const myLocalStorageData = localStorage.getItem("Arena");
-    const arr=[];
-   arr.push( myLocalStorageData );
-   console.log(arr);
-   return arr;
+  const myLocalStorageData = localStorage.getItem("Arena");   
+  return myLocalStorageData;
   }   
- 
-  
   render() {
     return (
       <div className="App">
@@ -25,5 +16,4 @@ class App extends Component {
     );
   }
 }
-
 export default App;
